@@ -11,10 +11,258 @@ and (-webkit-device-pixel-ratio : 3) {
     background: linear-gradient(180deg, #193F89 0%, rgba(25, 63, 137, 0) 100%);
 }
 
-h1, h2{
+.welcome {
     color: white;
     position: absolute;
     font-family: Roboto;
+    font-size: 100px;
+    left: 12%;
+    top: 2%;
+}
+
+.menu{
+    position:absolute;
+    left: 1%;
+    top: 2%;
+}
+
+.notif{
+    position:absolute;
+    right: 1%;
+    top: 2%;
+    height: 70px;
+    width: 70px;
+}
+
+.chore{
+    position: absolute; 
+    top: 15%;
+    width: 90%;
+    left: 5%;
+    height: 20%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.finished{
+    position: absolute; 
+    top: 37.5%;
+    width: 90%;
+    left: 5%;
+    height: 25%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.add{
+    position: absolute; 
+    top: 65%;
+    width: 45%;
+    right: 5%;
+    height: 32%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.reward{
+    position: absolute; 
+    top: 65%;
+    width: 40%;
+    left: 5%;
+    height: 15%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 50px;
+}
+
+.achiev{
+    position: absolute; 
+    top: 82%;
+    width: 40%;
+    left: 5%;
+    height: 15%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.chore1{
+    position: absolute;
+    width: 97.5%;
+    left: 1.25%;
+    top: 2%;
+    height: 30%;
+    z-index:1;
+    background: #B8D0FF;
+    border-radius: 5px;
+}
+
+.chore2{
+    position: absolute;
+    width: 97.5%;
+    left: 1.25%;
+    top: 40%;
+    height: 30%;
+    z-index:1;
+    background: #B8D0FF;
+    border-radius: 5px;
+}
+
+.addchore{
+    position: absolute;
+    width: 97.5%;
+    left: 1.25%;
+    top: 75%;
+    height: 20%;
+    z-index:1;
+    background: #398F37;;
+    border-radius: 5px;
+}
+
+.time{
+    position: absolute;
+    right: 1%;
+    height: 80%;
+    top: 10%;
+}
+
+.task{
+    font-size: 55px;
+    font-family: Roboto;
+}
+
+.addtext{
+    font-size: 55px;
+    font-family: Roboto;
+    color: white;
+    text-align:center;
+}
+
+.fbackground{
+    height: 90%;
+    top: 5%;
+    left: 2%;
+    width: 40%;
+    position: absolute;
+    background: #FFDC84;
+    border-radius: 5px;
+}
+
+.ftext{
+    position: absolute;
+    font-size: 40px;
+    width: 100%;
+    top: -5%;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.img1{
+    position: absolute;
+    top: 38%;
+    width: 80%;
+    left: 10%;
+}
+
+.confirm{
+    position: absolute;
+    width: 70%;
+    height: 10%;
+    font-size: 30px;
+    color: white;
+    font-family: Roboto;
+    left: 3%;
+    bottom: 3%;
+    background-color: #398F37 ;
 }
 
 
+.reject{
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    font-size: 30px;
+    color: white;
+    text-align: Center;
+    font-family: Roboto;
+    right: 3%;
+    bottom: 3%;
+    background-color:#F96969;
+}
+
+.token{
+    position:absolute;
+    height: 60%;
+    right: 0%;
+    top: 20%;
+}
+
+.token1{
+    position:absolute;
+    height: 60%;
+    right: 10%;
+    top: 20%;
+}
+
+.addimg{
+    bottom: 0%;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+}
+
+input{
+    position: absolute;
+    height: 15%;
+    top: 2%;
+    width: 90%;
+    left: 5%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 40px;
+}
+
+.btn1{
+    position: absolute;
+    height: 15%;
+    top: 25%;
+    width: 90%;
+    background-color: #398F37;
+    font-family: Roboto;
+    font-size: 50px;
+    color: white;
+    left: 5%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.btn2{
+    position: absolute;
+    height: 15%;
+    top: 45%;
+    width: 90%;
+    background-color:#F96969;
+    font-family: Roboto;
+    font-size: 50px;
+    color: white;
+    left: 5%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.btn1:active{
+    background-color:darkolivegreen;
+}
+
+.btn2:active{
+    background-color: darkred;
+}
+}

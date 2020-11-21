@@ -58,6 +58,7 @@ and (-webkit-device-pixel-ratio : 3) {
         top: 30%;
     }
 
+   
     .pinput{
         border-radius: 15px;
         width: 90%;
@@ -109,7 +110,10 @@ and (-webkit-device-pixel-ratio : 3) {
         font-family: Roboto;
         text-align: center;
         top: -30%;
+        z-index: 1;
         position: absolute;
         width: 100%;
     }
+
+   
  }
