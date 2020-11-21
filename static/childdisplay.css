@@ -1,0 +1,88 @@
+#burger{
+    width: 11%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#bellIcon{
+    width: 11%;
+    margin-left: 70%;
+    margin-top: 2%;
+}
+
+.parentWelcome{
+    font-size: 35px;
+    margin-left: 15%;
+    margin-top: 0%;
+    font-family: Roboto;
+}
+
+#money{
+    vertical-align: middle;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 6%;
+}
+
+#ach{
+    vertical-align: middle;
+    width: 147px;
+    margin-top: 10%;
+    margin-left: 7%;
+}
+
+#choresHead{
+    font-size: 25px;
+    margin-left: 30%;
+    padding-top: 15px;
+    font-family: Roboto;
+
+}
+
+.title{
+    font-family: Roboto;
+    font-size: 25px; 
+}
+
+.desc{
+    font-family: Roboto;
+    font-size: 20px;  
+}
+
+.pic{
+    position: absolute;
+    right: 25%;
+    top: 65%;
+}
+
+.check{
+    position: absolute;
+    right: 12.5%;
+    top: 65%;
+}
+
+.pic1{
+    position: absolute;
+    right: 25%;
+    top: 55%;
+}
+
+.check1{
+    position: absolute;
+    right: 12.5%;
+    top: 55%;
+}
+
+.pic2{
+    position: absolute;
+    right: 25%;
+    top: 75%;
+}
+
+.check2{
+    position: absolute;
+    right: 12.5%;
+    top: 75%;
+}
+
+

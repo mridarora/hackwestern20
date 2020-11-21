@@ -6,6 +6,8 @@ and (-webkit-device-pixel-ratio : 3) {
         position: absolute;
         width: 110%;
         height: 110%;
+        left: 0%;
+        top: 0%;
         background: #FFDC84;
     }
 
@@ -56,6 +58,7 @@ and (-webkit-device-pixel-ratio : 3) {
         top: 30%;
     }
 
+   
     .pinput{
         border-radius: 15px;
         width: 90%;
@@ -107,7 +110,12 @@ and (-webkit-device-pixel-ratio : 3) {
         font-family: Roboto;
         text-align: center;
         top: -30%;
+        z-index: 1;
         position: absolute;
         width: 100%;
+    }
+
+    a:hover{
+        color: white;
     }
  }
