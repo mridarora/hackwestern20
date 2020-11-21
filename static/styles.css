@@ -6,6 +6,8 @@ and (-webkit-device-pixel-ratio : 3) {
         position: absolute;
         width: 110%;
         height: 110%;
+        left: 0%;
+        top: 0%;
         background: #FFDC84;
     }
 
