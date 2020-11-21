@@ -14,6 +14,7 @@
     font-size: 35px;
     margin-left: 15%;
     margin-top: 0%;
+    font-family: Roboto;
 }
 
 #money{
@@ -34,9 +35,58 @@
     font-size: 25px;
     margin-left: 30%;
     padding-top: 15px;
+    font-family: Roboto;
 
 }
 
 .to-do{
     
 }
+
+.title{
+    font-family: Roboto;
+    font-size: 25px; 
+}
+
+.desc{
+    font-family: Roboto;
+    font-size: 20px;  
+}
+
+.pic{
+    position: absolute;
+    right: 25%;
+    top: 65%;
+}
+
+.check{
+    position: absolute;
+    right: 12.5%;
+    top: 65%;
+}
+
+.pic1{
+    position: absolute;
+    right: 25%;
+    top: 55%;
+}
+
+.check1{
+    position: absolute;
+    right: 12.5%;
+    top: 55%;
+}
+
+.pic2{
+    position: absolute;
+    right: 25%;
+    top: 75%;
+}
+
+.check2{
+    position: absolute;
+    right: 12.5%;
+    top: 75%;
+}
+
+
