@@ -7,9 +7,8 @@
     margin-top: 2%;
     margin-left: 2%;
 }
-  
-  /* Float four columns side by side */
-  .column {
+
+.column {
     float: left;
     width: 45%;
     padding: 0 10px;
@@ -31,7 +30,5 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-color: white;
+    background-color: rgba(255, 217, 94, 0.952);
   }
-  
-  /* Responsive columns - one column layout (vertical) on small screens */
