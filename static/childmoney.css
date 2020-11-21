@@ -14,8 +14,10 @@
     width: 45%;
     padding: 0 10px;
     margin-left: 3%;
+  
   }
   
+ 
   /* Remove extra left and right margins, due to padding in columns */
   .row {margin: 0 -5px;}
   
