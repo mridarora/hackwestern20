@@ -1,0 +1,113 @@
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) {
+    .background{
+        position: absolute;
+        width: 110%;
+        height: 110%;
+        background: #FFDC84;
+    }
+
+    .background2 {
+        position: absolute;
+        width: 130%;
+        height: 70%;
+        left: -25%;
+        top: -20%;
+        background: #193F89;
+        z-index: 1;
+        border-radius: 1000px;
+    }
+
+    .login{
+        position: absolute;
+        width: 90%;
+        height: 70%;
+        left: 7.5%;
+        top: 25%;
+        z-index: 2;
+        background: white;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .username{
+        width: 100%;
+        position: absolute;
+        font-size: 80px;
+        font-family: Roboto;
+        left: 5%;
+    }
+
+    .uinput{
+        border-radius: 15px;
+        width: 90%;
+        height: 40%;
+        position: absolute;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .password{
+        width: 100%;
+        position: absolute;
+        font-size: 80px;
+        font-family: Roboto;
+        left: 5%;
+        top: 30%;
+    }
+
+    .pinput{
+        border-radius: 15px;
+        width: 90%;
+        height: 40%;
+        position: absolute;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .loginc{
+        position: absolute;
+        top: 65%;
+        width: 40%;
+        height: 8%;
+        left: 5%;
+        background: #FEBD3F;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    }
+
+    .loginc:hover, .loginp:hover{
+       background-color:#FFDC84 ; 
+
+    }
+
+    .loginp{
+        position: absolute;
+        top: 65%;
+        width: 40%;
+        height: 8%;
+        right: 5%;
+        background: #FEBD3F;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    }
+
+    .signup{
+        position: absolute;
+        top: 80%;
+        width: 80%;
+        height: 8%;
+        right: 10%;
+        background: #FEBD3F;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    }
+
+    .logintext{
+        font-size: 60px;
+        font-family: Roboto;
+        text-align: center;
+        top: -30%;
+        position: absolute;
+        width: 100%;
+    }
+ }
