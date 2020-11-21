@@ -1,0 +1,42 @@
+#burger{
+    width: 11%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#bellIcon{
+    width: 11%;
+    margin-left: 70%;
+    margin-top: 2%;
+}
+
+.parentWelcome{
+    font-size: 35px;
+    margin-left: 15%;
+    margin-top: 0%;
+}
+
+#money{
+    vertical-align: middle;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 6%;
+}
+
+#ach{
+    vertical-align: middle;
+    width: 147px;
+    margin-top: 10%;
+    margin-left: 7%;
+}
+
+#choresHead{
+    font-size: 25px;
+    margin-left: 30%;
+    padding-top: 15px;
+
+}
+
+.to-do{
+    
+}
