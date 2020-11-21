@@ -115,7 +115,5 @@ and (-webkit-device-pixel-ratio : 3) {
         width: 100%;
     }
 
-    a:hover{
-        color: white;
-    }
+   
  }

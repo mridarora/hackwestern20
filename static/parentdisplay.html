@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="./parentdisplay.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<script src="app.js"></script>
 </head>
 <body>
 
@@ -42,9 +43,9 @@
         </div>
     </div>
     <div class=add>
-        <input>
-        <button class=btn1>Add User</button>
-        <button class=btn2>Delete User</button>
+        <input id='adduser'>
+        <button class=btn1 onclick="addChild()">Add User</button>
+        <button class=btn2 onclick="deleteChild()">Delete User</button>
         <img class=addimg src='images/user_plus.svg'>
     </div>  
     <div class=reward>
@@ -60,4 +61,5 @@
 </div>
 
 </body>
+
 </html>
