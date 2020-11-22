@@ -13,7 +13,9 @@
 </head>
 <body style="background-color: #193F89;">
     <div>
+       <a href="./parentdisplay.html">
         <img src="./img/back2.png" alt="">
+       </a>      
         <span style="color: white;font-size: 35px;">Assign Chore</span>
     </div>
 
@@ -21,31 +23,50 @@
         <div style="color: white; font-size: 25px;padding-left: 7%;padding-top: 5%;">
             Pick a person <br>
             <div style="margin-top: 5%;" class="dropdown">
-                <input type="text" style="width: 275px;height: 50px;border-radius: 3%;" class="dropbtn">
+                <button style="width: 275px;height: 50px;border-radius: 3%;" class="dropbtn"></button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="show()" id="Mridul">Mridul</a>
+                  <a href="#">Sarah</a>
+                  <a href="#">Michael</a>
+                </div>
             </div>
         </div>
-        <form>
-            <div style="color: white; font-size: 25px;padding-left: 7%;padding-top: 5%;">
-                Create a chore <br>
-                <div style="margin-top: 5%;" class="dropdown">
-                    <input type="text"style="width: 275px;height: 50px;border-radius: 3%;" class="dropbtn">
+        <div style="color: white; font-size: 25px;padding-left: 7%;padding-top: 5%;">
+            Pick a chore <br>
+            <div style="margin-top: 5%;" class="dropdown">
+                <button style="width: 275px;height: 50px;border-radius: 3%;" class="dropbtn"></button>
+                <div class="dropdown-content">
+                  <a href="#">Mopping</a>
+                  <a href="#">Sweeping</a>
+                  <a href="#">Wiping</a>
                 </div>
             </div>
-            <div style="color: white; font-size: 25px;padding-left: 7%;padding-top: 5%;">
-                Assign a deadline <br>
-                <div style="margin-top: 5%;" class="dropdown">
-                    <input type="text" style="width: 275px;height: 50px;border-radius: 3%;" class="dropbtn">
+        </div>
+        <div style="color: white; font-size: 25px;padding-left: 7%;padding-top: 5%;">
+            Pick a timeline <br>
+            <div style="margin-top: 5%;" class="dropdown">
+                <button style="width: 275px;height: 50px;border-radius: 3%;" class="dropbtn"></button>
+                <div class="dropdown-content">
+                  <a href="#">By Monday</a>
+                  <a href="#">By Tuesday</a>
+                  <a href="#">By Wednesday</a>
                 </div>
             </div>
-            <div style="color: white; font-size: 25px;padding-left: 7%;padding-top: 5%;">
-                Add Reward <br>
-                <div style="margin-top: 5%;" class="dropdown">
-                    <input type="text"style="width: 275px;height: 50px;border-radius: 3%;" class="dropbtn">
+        </div>
+        <div style="color: white; font-size: 25px;padding-left: 7%;padding-top: 5%;">
+            Add Reward <br>
+            <div style="margin-top: 5%;" class="dropdown">
+                <button style="width: 275px;height: 50px;border-radius: 3%;" class="dropbtn"></button>
+                <div class="dropdown-content">
+                  <a href="#">100</a>
+                  <a href="#">50</a>
+                  <a href="#">150</a>
                 </div>
             </div>
-            <input type="submit" value="Assign Chore"style="margin-top: 15%;margin-left: 15%;font-size: 35px;background-color: #11940d;width: 70%;padding: 3%;">
-        </form>
-        
+        </div>
+        <a href="./parentdisplay.html">
+        <button style="margin-top: 15%;margin-left: 15%;font-size: 35px;background-color: #11940d;width: 70%;padding: 3%;">Assign Chore</button>
+        </a>
         </div>
     </div>
 </body>
