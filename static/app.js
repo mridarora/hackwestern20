@@ -1,4 +1,4 @@
-//function to create a schedule
+//function to create a child
 function addChild(){
     name = document.getElementById('adduser').value;
     console.log(name)
@@ -18,6 +18,7 @@ fetch(url, {
   })
 }
 
+//function to redeem points
 function redeem(){
   tokens = document.getElementById('tokens').value;
 
@@ -46,7 +47,8 @@ function lock(){
   document.getElementById('tokens').innerHTML = 8;
   document.getElementById('locked').innerHTML = 11;
 }
-//function to create a schedule
+
+//function to delete a child
 function deleteChild(){
     name = document.getElementById('adduser').value;
     console.log(name)
