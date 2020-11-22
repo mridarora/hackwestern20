@@ -69,23 +69,10 @@ and (-webkit-device-pixel-ratio : 3) {
 
 .reward{
     position: absolute; 
-    top: 65%;
+    top: 64%;
     width: 40%;
     left: 5%;
-    height: 15%;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    font-family: Roboto;
-    font-size: 50px;
-}
-
-.achiev{
-    position: absolute; 
-    top: 82%;
-    width: 40%;
-    left: 5%;
-    height: 15%;
+    height: 10%;
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
@@ -93,6 +80,36 @@ and (-webkit-device-pixel-ratio : 3) {
     font-size: 40px;
     text-decoration: none;
 }
+
+.achiev{
+    position: absolute; 
+    top: 75%;
+    width: 40%;
+    left: 5%;
+    height: 10%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+
+.chall{
+    position: absolute; 
+    top: 86%;
+    width: 40%;
+    left: 5%;
+    height: 10%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 40px;
+    text-decoration: none;
+}
+
 
 .chore1{
     position: absolute;
