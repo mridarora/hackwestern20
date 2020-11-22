@@ -94,3 +94,25 @@ function Toggle2() {
       x.style.display = "none";
     }
   }
+
+  function assignChore(){
+    var url = "./api/chaching/chores/Anusha/Leonard/"
+    fetch(url, {
+      method: 'POST',
+      body: 
+        {
+          "name": "sweeping",
+          "time": "Nov 22 at 6pm",
+          "reward": 5,
+          "completed": false
+        }
+      })
+      .then(res => {
+        console.log('Added')
+      })
+      .catch((error) =>{
+      console.log(error)
+    
+    })
+    
+  }
