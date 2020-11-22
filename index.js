@@ -57,7 +57,7 @@ router.put('/:parent_name/:child_name', (req, res) => {
     const newChild = {
       child: req.params.child_name,
       chores: [],
-      tokens: [],
+      tokens: 0,
       rewards: [],
       achievments: []
     };
@@ -91,6 +91,28 @@ router.delete('/:parent_name/:child_name', (req, res) => {
 });
 
 //token operations
+router.post('/tokens/:parent_name/:child_name', (req, res) => {
+    const cost = req.body.cost;
+    const id = req.params.parent_name;
+    getChild = req.params.child_name;
+    
+    const collection = client.db("chaching").collection("houses");
+    
+    collection.find({ _id: id}, {children: {$elemMatch: {child: req.params.child_name}}}).toArray(function (err, result) {
+      if (result.length > 0) {
+            for(var i = 0; i < result[0].children.length; i++){
+                if(result[0].children[i].child == getChild && result[0].children[i].tokens >= cost){
+                    collection.updateOne({_id: id, children: {$elemMatch: {child: req.params.child_name}}}, {$inc: {"children.$.tokens": -1*cost}})
+                }
+            }
+            
+        //collection.updateOne({_id: id}, {$push: {createdRewards: newReward}})
+        res.send("Success");
+      } else {
+        res.status(404).send("Parent doesn't exist")
+      }
+    });
+});
 
 //reward operations
 router.post('/rewards/:parent_name', (req, res) => {
@@ -109,6 +131,7 @@ router.post('/rewards/:parent_name', (req, res) => {
     });
 });
 //achievment operations
+
 //chore operations
 router.post('/chores/:parent_name/:child_name', (req, res) => {
     const newChore = req.body;
@@ -119,10 +142,28 @@ router.post('/chores/:parent_name/:child_name', (req, res) => {
     
     collection.find({_id: id}, {children: {$elemMatch: {child: req.params.child_name}}}).toArray(function (err, result) {
         if (result.length > 0) {
-          collection.updateOne({_id: id, children: {$elemMatch: {child: req.params.child_name}}}, {$push: {children: {chores: {newChore}}}})
-          res.send("Child deleted")
+          collection.updateOne({_id: id, children: {$elemMatch: {child: req.params.child_name}}}, {$push: {"children.$.chores": newChore}})
+          res.send("Chore added")
         } else {
           res.status(404).send("Child not found")
+        }
+    });
+});
+
+router.post('/chores/completed/:parent_name/:child_name', (req, res) => {
+    const completeChore = req.body;
+    const id = req.params.parent_name;
+    
+    const collection = client.db("chaching").collection("houses");
+    
+    collection.find({_id: id}, {children: {$elemMatch: {child: req.params.child_name}}}, {children: {chores: {$elemMatch: {name: completeChore}}}}).toArray(function (err, result) {
+        if (result.length > 0) {
+          collection.updateOne({_id: id, children: {$elemMatch: {child: req.params.child_name}}}, {$inc: {"children.$.tokens": completeChore.reward}})
+          collection.updateOne({_id: id, children: {$elemMatch: {child: req.params.child_name}}}, {$pull: {"children.$.chores": completeChore}})
+          
+          res.send("Chore finished")
+        } else {
+          res.status(404).send("Chore not found")
         }
     });
 });
